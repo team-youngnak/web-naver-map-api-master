@@ -9,7 +9,6 @@ import java.util.List;
 
 @SpringBootTest
 public class Test1 {
-
     @Autowired
     private NaverClient naverClient;
 
@@ -21,6 +20,7 @@ public class Test1 {
 
     @Test
     public void test2() {
+
         var search = new SearchLocalRequest();
         search.setQuery("카페");
 
@@ -36,7 +36,7 @@ public class Test1 {
             System.out.println(searchLocalItem.getTitle());
             System.out.println(searchLocalItem.getRoadAddress());
             String keyword = searchLocalItem.getTitle() + " " + searchLocalItem.getRoadAddress();
-            System.out.println("keyword = " + keyword);
+            System.out.println("keyword = ");
         }
 
 
