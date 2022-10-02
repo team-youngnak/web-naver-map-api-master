@@ -8,7 +8,8 @@ public class CrawlingFindByIdTest {
     @Test
     public void test1() {
         try {
-            test2.execute("블루보트 광화문 종로구 서린동");
+            String star = test2.execute("블루보트 광화문 종로구 서린동");
+            System.out.println(star);
         } catch(InterruptedException e) {
             System.out.println("크롤링 중 예외 발생");
         }
